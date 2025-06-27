@@ -1,0 +1,18 @@
+@if (isServerRunning) {
+    <span>Yes, the server is running</span>
+    } @else {
+    <span>No, the server is not running</span>
+    }
+
+<ul>
+    @for (user of users ; track user.id) {
+    <li><a href="#\'user.name\'">{{ user.name }}</a></li>
+    }  
+</ul>
+
+<section (mouseover)="onMouseOver()">
+    There's a secret message for you, hover to reveal:
+    {{ message }}
+  </section>
+  
+
