@@ -2,7 +2,9 @@ import { Routes } from '@angular/router';
 import { InputComponent } from './input/input.component';
 import { OutputComponent } from './output/output.component';
 import { DirectivesComponent } from './directives/directives.component';
-import { QrcodeComponent } from './qrcode/qrcode.component';
+import { AngularQRcodeComponent } from './angular-qrcode/angular-qrcode.component';
+
+
 
 export const routes: Routes = [
     {
@@ -23,6 +25,6 @@ export const routes: Routes = [
     {
         path: 'qrcode',
         title: 'App qrcode Page',
-        component: QrcodeComponent,
+        component: AngularQRcodeComponent ,
     },
 ];
